@@ -1,11 +1,128 @@
 /* Tea Cozy stylesheet */
 
+
+
 body {
+  margin: 0; /* reset chrome user-agent 8px margin - TODO: might be good to add reset css */
   font-family: helvetica, sans-serif;
   font-size: 22px;
   color: seashell;
   background-color: black;
-  opacity: 0.9;
-
+  opacity: 0.9; /* TODO fix that*/
   text-align: center;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  border-bottom: 1px solid seashell;
+  height: 69px;
+  position: fixed;
+  width: 100%;
+
+}
+
+header .logo  {
+padding-left: 10px
+}
+
+header .logo img {
+  height: 50px;
+ }
+
+header nav {
+   padding-right: 10px
+}
+
+header a {
+  text-decoration: underline;
+  color: seashell;
+  padding-left: 20px; /* TODO better implementation?*/
+}
+
+section {
+  margin: auto;
+
+}
+
+
+section.banner {
+  width: 1200px;
+  padding-top: 69px;
+  background-color: blue;
+  background-image: url('../img/img-mission-background.jpg');
+  height: 700px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px; /* TODO improve   */
+}
+
+ .bannercontent {
+  background-color: black;
+  width: 100%;
+ /* TODO vertical padding to reduce */
+}
+
+section.content {
+  width: 1000px;
+margin-bottom: 50px; /* TODO improve   */
+}
+
+ .gallery {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
+
+.gallery-img img {
+  height: 200px;
+  width: 300px;
+  padding: 10px; /* TODO improve spacing accuracy */
+}
+
+ .locations {
+  height: 570px;  /* TODO  specs indicate 500px height but its more like 570px on the visual */
+  background-image: url('../img/img-locations-background.jpg');
+  background-size: cover;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.addresses {
+  display: flex;
+  justify-content:center;
+
+}
+
+.address-item {
+  width: 300px;
+  padding: 20px;
+  background-color: black;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.address-item span {
+  margin-bottom: 40px;
+}
+
+.contacts {
+  height: 200px;
+
+
+}
+
+footer { /*TODO improve spacing */
+  text-align: left;
+  padding: 0 0 20px 20px;
+
 }
