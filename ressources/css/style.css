@@ -1,0 +1,11 @@
+/* Tea Cozy stylesheet */
+
+body {
+  font-family: helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+
+  text-align: center;
+}
